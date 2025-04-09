@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    background-color: #f4f6f9; /* Light neutral background */
+    font-family: 'Arial', sans-serif; /* Cleaner font */
+    color: #333; /* Dark text for readability */
+    background-image: url('../assets/195384443_80e5a83e-0a99-494d-9489-4e89a8630084.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #040046; /* Dark blue navbar */
+    text-align: center; /* Centers the text within the navbar */
+    border-bottom: 2px solid #333; /* Subtle border */
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* White text for navbar links */
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+.navbar-toggler {
+    filter: invert(1); /* Ensures the hamburger icon is white */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Makes the navbar link text white */
+    transition: color 0.3s; /* Adds a smooth transition effect for the color change */
+    font-size: 1rem; /* Makes links slightly larger */
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important; /* Keeps the link text white on hover */
+    text-decoration: underline; /* Underlines the text on hover */
+}
+
+.opened-nav {
+    background-color: #040046 !important; /* Keeps the same background color for the opened navbar */
+}
+
+.active {
+    color: white !important; /* Makes active links white */
+    text-decoration: underline; /* Underlines the active links */
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff; /* White background for cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a sleek look */
+    border-radius: 10px; /* Rounded corners for a more modern feel */
+    margin-bottom: 30px;
+    padding: 25px;
+    height: 900px;
+}
+
+h1, h3 {
+    color: #333; /* Dark color for headings */
+    font-weight: 600;
+}
+
+/* Table Styles */
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle; /* Vertically centered text */
+    padding: 15px;
+    font-size: 1rem; /* Consistent font size */
+}
+
+.table thead {
+    background-color: #1a1a1a; /* Dark gray header */
+    color: #ffffff; /* White text for header */
+    font-weight: 600;
+}
+
+/* Status Labels */
+.status {
+    font-weight: bold;
+}
+
+.status.present { color: #27ae60 !important; }
+.status.absent { color: #e74c3c !important; }
+.status.leave { color: #3498db !important; }
+.status.approved { color: #4502fc !important; }
+.status.denied { color: #14c2fc !important; }
+
+/* Button Styles */
+.btn-primary {
+    background-color: #2980b9; /* Darker blue for buttons */
+    border-color: #2980b9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #1c6ea4;
+    border-color: #1c6ea4;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark footer */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Form Control Styles */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd; /* Subtle border around form inputs */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1, h3 {
+        font-size: 1.2rem;
+    }
+
+    .attendance-table th, .attendance-table td {
+        font-size: 0.875rem; /* Smaller table font on mobile */
+        padding: 10px;
+    }
+
+    .btn-primary {
+        width: 100%; /* Full width button on mobile */
+    }
+}
+
+/* Define a fixed size for the chart container */
+.card {
+    max-width: 100%;
+    height: 800px; /* Set a fixed height for the card */
+    /* overflow: hidden; Prevents the content from overflowing */
+}
+
+
+canvas {
+    width: 100% !important; /* Ensure the chart takes full width of the container */
+    height: 100% !important; /* Ensure the chart height stays proportional to the container */
+}
