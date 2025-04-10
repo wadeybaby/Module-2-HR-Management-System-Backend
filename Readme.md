@@ -3,8 +3,6 @@ ModernTech Solutions HR Management System - Backend (Module 2)
 
 This is the backend for the ModernTech Solutions HR Management System, built using PHP and MySQLi. It manages employee data, payroll, time tracking, and performance. The system handles employee records, salary calculations, attendance, leave requests, and generates payslips. It also includes secure authentication and an admin dashboard for managing all modules. AJAX and real-time updates ensure smooth user interactions.
 
-(Visit our frontend here)
-Login username: HR, password: admin123*
 
 ## Table of Contents
 - [Live Demo](#live-demo)
@@ -16,7 +14,7 @@ Login username: HR, password: admin123*
 - [Authors](#authors)
 
 ## Live Demo
-Link to live deployed website
+[Link to live deployed website]()
 
 ## Technologies Used
 * Back-end: PHP (Version 7.4 or later recommended), MySQLi
@@ -30,7 +28,7 @@ Link to live deployed website
 ## Setup Instructions
 Follow these steps to run the HR system backend locally:
 
-## Prerequisites:
+**Prerequisites:**
 
 * PHP (Version 7.4 or later recommended)
 
@@ -39,8 +37,7 @@ Follow these steps to run the HR system backend locally:
 * Apache or any local server (e.g., XAMPP)
 
 1. **Clone or Download the Project:**
-git clone https://github.com/Zainunesa/Module-2.git
-cd Module-2
+git clone https://github.com/wadeybaby/Module-2-HR-Management-System-Backend
 
 3. **Configure the Database:**
 
@@ -92,46 +89,94 @@ Adding Users (Uncomment Code in index.php): To add new users to the system, foll
 
 MODERNTECH
 ├── assets
+│    ├── 6402717_3257989.jpg
+│    ├── 69603051_uyfydu5.jpg
+│    ├── 195384443_80e5a83e-0a99-494d-9489-4e89a8630084.jpg
+│    ├── 1591794432208.jpg
+│    ├── Case-study-Mar24.jpg
+│    ├── depositphotos_48703121-stock-photo-data-management.jpg
+│    ├── logo-color.png
+│    └── moderntech-solutions-high-resolution-logo-removebg-preview.png
+│
 ├── css
+│    ├── dashboard.css
+│    ├── employeedirectory.css
+│    ├── login.css
+│    └── performance.css
+│
 ├── database
+│   └── db.php
 ├── employeedata
+│   ├── createemployee.php 
+│   ├── employeedata.js            
+│   ├── employeedata.php 
+│   ├── employeedirectory.php          
+│   └── employeeroutes.php              
+│
 ├── js
+│   └── performance.js                 
+│
 ├── payroll
+│   ├── fetch_employees.php             
+│   ├── fetch_payroll.php               
+│   ├── generate_payslip.php            
+│   ├── payroll.css        
+│   ├── payroll.js                      
+│   ├── payroll.php                     
+│   ├── save_payroll.php                
+│   └── update_payroll.php              
+│
 ├── performance
+│   └── performance.html
+│
 ├── time
+│   ├── admin.js
+│   ├── admin.php                  
+│   ├── employee.js                    
+│   ├── employee.php
+│   ├── process_request.php           
+│   ├── submit_request.php
+│   └── time.css
+│
 ├── auth.php
+│
 ├── dashboard.php
+│
 ├── index.php
+│
 ├── logout.php
+│
 ├── moderntech(final).sql
+│
 └── README.md
-Additional Notes:
 
-The system is designed for an admin to log in and manage employees, payroll data, and time tracking. Ensure proper user roles and authentication via auth.php.
+**Additional Notes:**
 
-If any issues arise during setup, check the error logs to ensure all database queries and server configurations are correct.
+* The system is designed for an admin to log in and manage employees, payroll data, and time tracking. Ensure proper user roles and authentication via auth.php.
 
-AJAX and JavaScript are used for a smooth user experience, so make sure JavaScript is enabled in your browser.
+* If any issues arise during setup, check the error logs to ensure all database queries and server configurations are correct.
+
+* AJAX and JavaScript are used for a smooth user experience, so make sure JavaScript is enabled in your browser.
 
 ## Key Features
 This HR management system backend includes:
 
-Employee Management: Manage employee records and create new entries.
+* **Employee Management:** Manage employee records and create new entries.
 
-Payroll Management: Handle salary data and generate payslips.
+* **Payroll Management:** Handle salary data and generate payslips.
 
-Time Tracking: Manage employee attendance and time-off requests.
+* **Time Tracking:** Manage employee attendance and time-off requests.
 
-Authentication: Secure login and role-based access (Admin and Employee).
+* **Authentication:** Secure login and role-based access (Admin and Employee).
 
-Admin Dashboard: Overview of employee data, payroll, and time tracking.
+* **Admin Dashboard:** Overview of employee data, payroll, and time tracking.
 
-AJAX Integration: Real-time updates for a smooth user experience.
+* **AJAX Integration:** Real-time updates for a smooth user experience.
 
 ## Credits
-PHP/MySQLi for the backend
+* PHP/MySQLi for the backend
 
-HTML/CSS/JS for frontend and AJAX integration
+* HTML/CSS/JS for frontend and AJAX integration
 
 ## Authors
 Wade Britz
